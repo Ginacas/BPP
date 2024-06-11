@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #537636;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto; /* Ajusta el margen para centrar la imagen */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+   
+}
+
+/* SLIDER-------------------------------------------- */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 4s ease-in-out;   /* tiempo de la tansicion */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    height: auto;
+}
+
+/* --------------------- hasta aqui el slider imagenes------------------------------- */
+
+.phone-container {
+    position: relative;
+    width: 359px; /* Ajusta el ancho según la imagen de tu celular */
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.phone-image {
+    width: 100%;
+    height: auto;
+    
+}
+
+.phone-slider-container {
+    position: absolute;
+    top: 14%; /* Ajusta la posición superior según la imagen de tu celular */
+    left: 10%; /* Ajusta la posición izquierda según la imagen de tu celular */
+    width: 80%; /* Ajusta el ancho del contenedor del slider */
+    height: 70%; /* Ajusta la altura del contenedor del slider */
+    overflow: hidden;
+}
+
+.phone-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.phone-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.phone-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-slide img {
+   margin: 20px;
+    
+    width: 249px; /* Ajusta el ancho del contenedor del slider */
+    height: 444px; /* Ajusta la altura del contenedor del slider */
+    
+}
+.phone-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.phone-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.phone-indicator.active {
+    background-color: #333;
+}
+
+.align-top {
+    vertical-align: top;
+    
+}
+/* --------------------- hasta aquí el slider del celular-------------------------------- */
+
+
+/* MENU */
+nav {
+    background-color: #283e06;
+}
+
+.menu-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el menú */
+}
+
+.menu-horizontal li {
+    float: left;
+}
+
+.menu-horizontal li a {
+    display: block;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu-horizontal li a:hover {
+    background-color: #111;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1250px; /* Ancho máximo para el contenido */
+}
+
+/* TEXTO DEL PETRINO GIGANTE */
+
+.two-columns {
+    background-color: #b5b682;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.column-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.column-left img {
+    width: 100%;
+    height: auto;
+}
+
+.column-right {
+    flex: 2;
+}
+/* HASTA AQUI EL TEXTO E IMG DEL PETRINO GIGANTE */
+
+
+.recomendacion {
+    background-color: #b5b682; /* Color de fondo verde */
+    
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alinear el contenido al centro */
+    margin-top: 20px; /* Margen superior para separar del contenido anterior */
+    margin-bottom: 0; /* Sin margen inferior para unir con el pie de página */
+}
+
+.recomendacion table {
+    width: 100%;
+}
+
+.recomendacion img {
+    width: 50%; /* Ancho completo de las imágenes */
+    height: auto; /* Ajuste automático de la altura */
+    display: block; /* Quitar cualquier espacio en línea */
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+.footer-line {
+    border: none;
+    border-top: 1px solid #969696; /* Cambia el color y el grosor según sea necesario */
+    margin: 1px 0;
+}
+
+.social-icons {
+text-align: center;
+}
+.social-icons img {
+width: 40px;
+height: 40px;
+margin: 0 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .column {
+    flex: 1;
+    margin: 5 25px;
+    text-align: center;
+}
+
+.footer .column h3 {
+    margin-bottom: 20px;
+}
+
+/* TABLA DE NOTICIAS E IMG */
+
+.image-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.image-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
